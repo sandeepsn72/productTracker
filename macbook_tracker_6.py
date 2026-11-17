@@ -807,11 +807,7 @@ class ProductTracker:
                 self.last_status[key] = in_stock
 
     def play_sound(self):
-        try:
-            for freq in [1000, 1200, 1400, 1600, 1000, 1600, 2000]:
-                winsound.Beep(freq, 400)
-        except Exception as e:
-            logger.error(f"❌ Sound failed: {e}")
+        pass
     def run(self):
         logger.info("🚀 PRODUCT TRACKER STARTED (100% Background Mode)")
         logger.info(f"⏸️  Pause: F9 (or create '{PAUSE_FLAG_FILE}')")

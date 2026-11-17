@@ -1,0 +1,306 @@
+2026-11-18 00:23:29,829 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:23:29,831 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:23:29,831 - INFO - ✅ Tracker initialized with 4 listings
+2026-11-18 00:23:29,832 - INFO - 🚀 PRODUCT TRACKER STARTED
+2026-11-18 00:23:29,832 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:23:31,833 - INFO - 📅 Checking at 00:23:31
+2026-11-18 00:23:31,833 - INFO - ==================================================
+2026-11-18 00:23:31,834 - INFO - 🔍 STARTING PRODUCT CHECK
+2026-11-18 00:23:31,835 - INFO - ==================================================
+2026-11-18 00:23:34,207 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:23:43,316 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:23:44,318 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:23:53,228 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:23:54,229 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:24:00,823 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:24:01,824 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:24:10,209 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:24:13,746 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:24:17,810 - INFO - 
+==================================================
+2026-11-18 00:24:17,811 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:24:17,811 - INFO - ==================================================
+2026-11-18 00:24:17,818 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:24 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:24:17,820 - INFO - ==================================================
+2026-11-18 00:24:17,828 - INFO - 📤 Sending to Sandeep Saini (918899700262)...
+2026-11-18 00:24:17,836 - INFO - 📱 Dispatching WhatsApp to 918899700262 (attempt 1)...
+2026-11-18 00:24:37,361 - INFO - ✅ WhatsApp sent to 918899700262
+2026-11-18 00:24:39,362 - INFO - 📤 Sending to Gurmeet (918950158616)...
+2026-11-18 00:24:39,363 - INFO - 📱 Dispatching WhatsApp to 918950158616 (attempt 1)...
+2026-11-18 00:24:58,978 - INFO - ✅ WhatsApp sent to 918950158616
+2026-11-18 00:25:00,978 - INFO - 📤 Sending to Munil Giri (918802219480)...
+2026-11-18 00:25:00,980 - INFO - 📱 Dispatching WhatsApp to 918802219480 (attempt 1)...
+2026-11-18 00:25:08,581 - INFO - 🛑 Tracker stopped by user
+2026-11-18 00:36:56,364 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:36:56,365 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:36:56,365 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:36:56,365 - INFO - ==================================================
+2026-11-18 00:36:56,365 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:36:56,366 - INFO - ==================================================
+2026-11-18 00:36:57,757 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:37:06,036 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:37:07,038 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:37:13,529 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:37:14,530 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:37:21,648 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:37:22,649 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:37:29,636 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:37:32,960 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:38:52,068 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:38:52,068 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:38:52,068 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:38:52,069 - INFO - 🚀 PRODUCT TRACKER STARTED (100% Background Mode)
+2026-11-18 00:38:52,069 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:38:54,070 - INFO - 📅 Checking at 00:38:54
+2026-11-18 00:38:54,071 - INFO - ==================================================
+2026-11-18 00:38:54,071 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:38:54,071 - INFO - ==================================================
+2026-11-18 00:38:55,017 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:39:01,956 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:39:02,958 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:39:11,943 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:39:12,944 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:39:18,257 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:39:19,258 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:39:24,323 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:39:27,508 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:39:31,557 - INFO - 
+==================================================
+2026-11-18 00:39:31,557 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:39:31,557 - INFO - ==================================================
+2026-11-18 00:39:31,557 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:39 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:39:31,557 - INFO - ==================================================
+2026-11-18 00:39:32,761 - INFO - 📤 Sending to Sandeep Saini (918899700262)...
+2026-11-18 00:39:32,762 - INFO - 📱 Dispatching WhatsApp to 918899700262 in background (attempt 1)...
+2026-11-18 00:39:33,564 - ERROR - ❌ Phone number 918899700262 is invalid according to WhatsApp
+2026-11-18 00:39:35,065 - INFO - 📤 Sending to Gurmeet (918950158616)...
+2026-11-18 00:39:35,065 - INFO - 📱 Dispatching WhatsApp to 918950158616 in background (attempt 1)...
+2026-11-18 00:39:35,694 - ERROR - ❌ Phone number 918950158616 is invalid according to WhatsApp
+2026-11-18 00:39:37,195 - INFO - 📤 Sending to Munil Giri (918802219480)...
+2026-11-18 00:39:37,195 - INFO - 📱 Dispatching WhatsApp to 918802219480 in background (attempt 1)...
+2026-11-18 00:39:37,780 - ERROR - ❌ Phone number 918802219480 is invalid according to WhatsApp
+2026-11-18 00:39:48,439 - INFO - ⏰ Next check in 60 seconds...
+2026-11-18 00:39:53,272 - INFO - 🛑 Tracker stopped by user
+2026-11-18 00:40:34,717 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:40:34,718 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:40:34,718 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:40:34,718 - INFO - 🚀 PRODUCT TRACKER STARTED (100% Background Mode)
+2026-11-18 00:40:34,718 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:40:45,633 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:40:45,633 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:40:45,633 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:40:45,633 - INFO - 🚀 PRODUCT TRACKER STARTED (100% Background Mode)
+2026-11-18 00:40:45,633 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:40:47,635 - INFO - 📅 Checking at 00:40:47
+2026-11-18 00:40:47,635 - INFO - ==================================================
+2026-11-18 00:40:47,635 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:40:47,636 - INFO - ==================================================
+2026-11-18 00:40:48,715 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:40:54,270 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:40:55,272 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:41:00,278 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:41:01,280 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:41:06,251 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:41:07,253 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:41:15,516 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:41:18,799 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:41:22,858 - INFO - 
+==================================================
+2026-11-18 00:41:22,859 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:41:22,859 - INFO - ==================================================
+2026-11-18 00:41:22,860 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:41 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:41:22,860 - INFO - ==================================================
+2026-11-18 00:41:24,309 - INFO - 📤 Sending to Sandeep Saini (+918899700262)...
+2026-11-18 00:41:24,310 - INFO - 📱 Dispatching WhatsApp to +918899700262 in background (attempt 1)...
+2026-11-18 00:41:25,397 - ERROR - ❌ Phone number +918899700262 is invalid according to WhatsApp
+2026-11-18 00:41:26,898 - INFO - 📤 Sending to Gurmeet (+918950158616)...
+2026-11-18 00:41:26,898 - INFO - 📱 Dispatching WhatsApp to +918950158616 in background (attempt 1)...
+2026-11-18 00:41:27,638 - ERROR - ❌ Phone number +918950158616 is invalid according to WhatsApp
+2026-11-18 00:41:29,139 - INFO - 📤 Sending to Munil Giri (+918802219480)...
+2026-11-18 00:41:29,139 - INFO - 📱 Dispatching WhatsApp to +918802219480 in background (attempt 1)...
+2026-11-18 00:41:30,461 - ERROR - ❌ Phone number +918802219480 is invalid according to WhatsApp
+2026-11-18 00:41:34,175 - INFO - 🛑 Tracker stopped by user
+2026-11-18 00:44:52,037 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:44:52,037 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:44:52,037 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:44:52,037 - INFO - ==================================================
+2026-11-18 00:44:52,037 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:44:52,037 - INFO - ==================================================
+2026-11-18 00:44:53,016 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:44:59,579 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:45:00,581 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:45:05,478 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:45:06,479 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:45:14,260 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:45:15,264 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:45:26,683 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:45:29,950 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:45:34,042 - INFO - 
+==================================================
+2026-11-18 00:45:34,042 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:45:34,042 - INFO - ==================================================
+2026-11-18 00:45:34,043 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:45 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:45:34,043 - INFO - ==================================================
+2026-11-18 00:45:35,333 - INFO - 📤 Sending to Sandeep Saini (918899700262)...
+2026-11-18 00:45:35,333 - INFO - 📱 Dispatching WhatsApp to 918899700262 in background (attempt 1)...
+2026-11-18 00:45:41,673 - INFO - ✅ WhatsApp sent to 918899700262
+2026-11-18 00:45:46,173 - INFO - 📤 Sending to Gurmeet (918950158616)...
+2026-11-18 00:45:46,174 - INFO - 📱 Dispatching WhatsApp to 918950158616 in background (attempt 1)...
+2026-11-18 00:45:49,921 - INFO - ✅ WhatsApp sent to 918950158616
+2026-11-18 00:45:54,423 - INFO - 📤 Sending to Munil Giri (918802219480)...
+2026-11-18 00:45:54,424 - INFO - 📱 Dispatching WhatsApp to 918802219480 in background (attempt 1)...
+2026-11-18 00:45:58,176 - INFO - ✅ WhatsApp sent to 918802219480
+2026-11-18 00:47:06,632 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:47:06,633 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:47:06,633 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:47:06,633 - INFO - 🚀 PRODUCT TRACKER STARTED (100% Background Mode)
+2026-11-18 00:47:06,633 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:47:08,634 - INFO - 📅 Checking at 00:47:08
+2026-11-18 00:47:08,634 - INFO - ==================================================
+2026-11-18 00:47:08,635 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:47:08,635 - INFO - ==================================================
+2026-11-18 00:47:09,611 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:47:14,976 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:47:15,977 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:47:20,936 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:47:21,937 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:47:26,866 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:47:27,867 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:47:37,565 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:47:40,872 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:47:44,936 - INFO - 
+==================================================
+2026-11-18 00:47:44,937 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:47:44,937 - INFO - ==================================================
+2026-11-18 00:47:44,937 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:47 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:47:44,937 - INFO - ==================================================
+2026-11-18 00:47:46,249 - INFO - 📤 Sending to Sandeep Saini (918899700262)...
+2026-11-18 00:47:46,250 - INFO - 📱 Dispatching WhatsApp to 918899700262 in background (attempt 1)...
+2026-11-18 00:47:52,712 - INFO - ✅ WhatsApp sent to 918899700262
+2026-11-18 00:47:57,216 - INFO - 📤 Sending to Gurmeet (918950158616)...
+2026-11-18 00:47:57,217 - INFO - 📱 Dispatching WhatsApp to 918950158616 in background (attempt 1)...
+2026-11-18 00:48:01,980 - INFO - ✅ WhatsApp sent to 918950158616
+2026-11-18 00:48:06,482 - INFO - 📤 Sending to Munil Giri (918802219480)...
+2026-11-18 00:48:06,483 - INFO - 📱 Dispatching WhatsApp to 918802219480 in background (attempt 1)...
+2026-11-18 00:48:11,105 - INFO - ✅ WhatsApp sent to 918802219480
+2026-11-18 00:48:24,877 - INFO - ⏰ Next check in 60 seconds...
+2026-11-18 00:48:39,563 - INFO - 🛑 Tracker stopped by user
+2026-11-18 00:50:00,704 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 00:50:00,705 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 00:50:00,705 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 00:50:00,705 - INFO - 🚀 PRODUCT TRACKER STARTED (100% Background Mode)
+2026-11-18 00:50:00,705 - INFO - ⏸️  Pause: F9 (or create 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag')
+2026-11-18 00:50:02,706 - INFO - 📅 Checking at 00:50:02
+2026-11-18 00:50:02,706 - INFO - ==================================================
+2026-11-18 00:50:02,706 - INFO - 🔍 STARTING PRODUCT CHECK (Background)
+2026-11-18 00:50:02,707 - INFO - ==================================================
+2026-11-18 00:50:03,652 - INFO - --- Checking MacBook Neo 13" Indigo ---
+2026-11-18 00:50:11,478 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:50:12,480 - INFO - --- Checking MacBook Neo 13" Blush ---
+2026-11-18 00:50:18,820 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:50:19,823 - INFO - --- Checking MacBook Neo 13" Silver ---
+2026-11-18 00:50:26,249 - INFO - ❌ RELIANCE: OUT OF STOCK - 'currently unavailable online'
+2026-11-18 00:50:27,252 - INFO - --- Checking MacBook Neo 13" Citrus ---
+2026-11-18 00:50:34,189 - INFO - ✅ RELIANCE: purchase option found - 'add to cart'
+2026-11-18 00:50:37,545 - INFO - ✅ CHECK COMPLETE - 4/4 successful
+2026-11-18 00:50:41,628 - INFO - 
+==================================================
+2026-11-18 00:50:41,631 - INFO - 📢 REPORTING INITIAL TRACKER STATUS ON WHATSAPP
+2026-11-18 00:50:41,631 - INFO - ==================================================
+2026-11-18 00:50:41,638 - INFO - 🚀 *MACBOOK TRACKER ONLINE*
+━━━━━━━━━━━━━━━━━━━━━
+⏰ *Started:* 18-Nov 12:50 AM
+📦 *Monitored Listings:* 4 on Reliance Digital
+⏱️ *Check Frequency:* Every 60s
+━━━━━━━━━━━━━━━━━━━━━
+📋 *INITIAL STOCK STATUS:*
+🟢 *MacBook Neo 13" Indigo*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfg4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-indigo-mmdg1i-9971844
+🔴 *MacBook Neo 13" Blush*: Out of Stock (₹83,600)
+🔴 *MacBook Neo 13" Silver*: Out of Stock (₹83,600)
+🟢 *MacBook Neo 13" Citrus*: IN STOCK (₹83,600)
+   🔗 https://www.reliancedigital.in/product/apple-mhfe4hna-macbook-neo-apple-a18-pro-chip8-gb512-gb-ssdmacosliquid-retina-3302-cm-13-inch-citrus-mmdg1g-9971838
+━━━━━━━━━━━━━━━━━━━━━
+🚨 *ACTION REQUIRED:* One or more items are currently IN STOCK! Check links above to purchase.
+2026-11-18 00:50:41,638 - INFO - ==================================================
+2026-11-18 00:50:42,868 - INFO - 📤 Sending to Sandeep Saini (918899700262)...
+2026-11-18 00:50:42,868 - INFO - 📱 Dispatching WhatsApp to 918899700262 in background (attempt 1)...
+2026-11-18 00:50:49,645 - INFO - ✅ WhatsApp sent to 918899700262
+2026-11-18 00:50:54,147 - INFO - 📤 Sending to Gurmeet (918950158616)...
+2026-11-18 00:50:54,148 - INFO - 📱 Dispatching WhatsApp to 918950158616 in background (attempt 1)...
+2026-11-18 00:50:58,204 - INFO - ✅ WhatsApp sent to 918950158616
+2026-11-18 00:51:02,706 - INFO - 📤 Sending to Munil Giri (918802219480)...
+2026-11-18 00:51:02,706 - INFO - 📱 Dispatching WhatsApp to 918802219480 in background (attempt 1)...
+2026-11-18 00:51:06,443 - INFO - ✅ WhatsApp sent to 918802219480
+2026-11-18 00:51:10,724 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/13658c8c1a74cb735b0419e4b6418245
+2026-11-18 00:51:16,849 - INFO - 🛑 Tracker stopped by user

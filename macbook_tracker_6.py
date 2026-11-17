@@ -79,9 +79,27 @@ PRODUCTS = [
 ]
 
 WHATSAPP_CONTACTS = [
-    {"name": "Sandeep Saini", "number": "918899700262", "send_alert": True},
-    {"name": "Gurmeet", "number": "918950158616", "send_alert": True},
-    {"name": "Munil Giri", "number": "918802219480", "send_alert": True},
+    {
+        "name": "Sandeep Saini",
+        "number": "918899700262",
+        "send_alert": True,
+        "send_ratio": 1.0,         # Receives 100% of all messages (in-stock, out-of-stock, heartbeats, status)
+        "receive_heartbeat": True,
+    },
+    {
+        "name": "Gurmeet",
+        "number": "918950158616",
+        "send_alert": True,
+        "send_ratio": 0.3,         # Receives 30% of alerts (3 out of every 10 alerts)
+        "receive_heartbeat": True,
+    },
+    {
+        "name": "Munil Giri",
+        "number": "918802219480",
+        "send_alert": True,
+        "send_ratio": 0.3,         # Receives 30% of alerts (3 out of every 10 alerts)
+        "receive_heartbeat": True,
+    },
 ]
 
 CHECK_INTERVAL = 120
@@ -216,6 +234,8 @@ class ProductTracker:
         for product in PRODUCTS:
             key = f"{product['name']}_{product['site']}"
             self.last_status[key] = False
+
+        self.alert_counter: Dict[str, int] = {c["number"]: 0 for c in WHATSAPP_CONTACTS}
 
         logger.info(f"✅ Tracker initialized with {len(PRODUCTS)} listings (Headless Background Mode)")
 
@@ -659,10 +679,43 @@ class ProductTracker:
             except Exception:
                 pass
 
-    def broadcast_whatsapp(self, message: str):
-        """Broadcast message to all active contacts using a single headless session."""
-        active_contacts = [c for c in WHATSAPP_CONTACTS if c.get("send_alert", True)]
-        if not active_contacts:
+    def should_send_to_contact(self, contact: dict, message_type: str = "alert") -> bool:
+        """
+        Determines whether a contact should receive a particular message.
+        - Sandeep Saini (send_ratio=1.0) receives 100% of all messages (in-stock, out-of-stock, status, heartbeats).
+        - Other contacts (send_ratio=0.3) receive 30% of alerts (3 out of every 10 alerts).
+        - Heartbeats are restricted to contacts with receive_heartbeat=True.
+        """
+        if not contact.get("send_alert", True):
+            return False
+
+        # Heartbeat filter
+        if message_type == "heartbeat":
+            return bool(contact.get("receive_heartbeat", False))
+
+        ratio = contact.get("send_ratio", 1.0)
+        # 100% recipients always receive all alerts
+        if ratio >= 1.0:
+            return True
+
+        # For 30% sample: deterministic 3 out of 10 messages (indices 0, 3, 7)
+        num = contact["number"]
+        count = self.alert_counter.get(num, 0)
+        self.alert_counter[num] = count + 1
+
+        is_selected = (count % 10) in [0, 3, 7]
+        if not is_selected:
+            logger.info(f"⏭️ Skipping {contact['name']} (30% throttle: alert #{count + 1} skipped)")
+        return is_selected
+
+    def broadcast_whatsapp(self, message: str, message_type: str = "alert"):
+        """Broadcast message according to each contact's eligibility and send ratio."""
+        eligible_contacts = [
+            c for c in WHATSAPP_CONTACTS
+            if self.should_send_to_contact(c, message_type=message_type)
+        ]
+        if not eligible_contacts:
+            logger.info("📌 No contacts eligible for this broadcast")
             return
 
         driver = self._create_whatsapp_driver()
@@ -671,7 +724,7 @@ class ProductTracker:
             return
 
         try:
-            for contact in active_contacts:
+            for contact in eligible_contacts:
                 logger.info(f"📤 Sending to {contact['name']} ({contact['number']})...")
                 self._send_whatsapp_with_driver(driver, contact["number"], message)
                 time.sleep(1.5)
@@ -696,7 +749,7 @@ class ProductTracker:
             logger.info("=" * 50)
 
             if not network_error:
-                self.broadcast_whatsapp(initial_status_msg)
+                self.broadcast_whatsapp(initial_status_msg, message_type="initial")
                 self.is_first_run = False
 
                 any_in_stock = any(r[0] for r in results.values() if r[3])
@@ -715,7 +768,7 @@ class ProductTracker:
         if current_time - self.last_heartbeat >= HEARTBEAT_INTERVAL:
             heartbeat_msg = self.format_heartbeat_message()
             logger.info("💓 Sending periodic heartbeat to WhatsApp contacts...")
-            self.broadcast_whatsapp(heartbeat_msg)
+            self.broadcast_whatsapp(heartbeat_msg, message_type="heartbeat")
             self.last_heartbeat = current_time
 
         # Network error handling
@@ -731,10 +784,10 @@ class ProductTracker:
             for pending in self.pending_error_messages:
                 msg = self.format_change_message(pending["results"])
                 if msg:
-                    self.broadcast_whatsapp(msg)
+                    self.broadcast_whatsapp(msg, message_type="alert")
             self.pending_error_messages = []
 
-        # Change alerts
+        # Change alerts (in-stock or out-of-stock)
         message = self.format_change_message(results)
         if not message:
             logger.info("📌 No status change - skipping alert")
@@ -744,7 +797,7 @@ class ProductTracker:
             logger.info("=" * 50)
             logger.info(message)
             logger.info("=" * 50)
-            self.broadcast_whatsapp(message)
+            self.broadcast_whatsapp(message, message_type="alert")
 
             if ENABLE_SOUND:
                 self.play_sound()
@@ -754,7 +807,11 @@ class ProductTracker:
                 self.last_status[key] = in_stock
 
     def play_sound(self):
-        pass
+        try:
+            for freq in [1000, 1200, 1400, 1600, 1000, 1600, 2000]:
+                winsound.Beep(freq, 400)
+        except Exception as e:
+            logger.error(f"❌ Sound failed: {e}")
     def run(self):
         logger.info("🚀 PRODUCT TRACKER STARTED (100% Background Mode)")
         logger.info(f"⏸️  Pause: F9 (or create '{PAUSE_FLAG_FILE}')")

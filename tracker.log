@@ -306,3 +306,20 @@
 2026-11-18 00:51:16,849 - INFO - 🛑 Tracker stopped by user
 2026-11-18 00:56:19,558 - INFO - This info log should NOT appear on console
 2026-11-18 00:56:19,558 - WARNING - This warning log SHOULD appear on console
+2026-11-18 01:04:21,299 - INFO - ⌨️  F9 = pause / resume toggle
+2026-11-18 01:04:21,299 - INFO - 📁 Or create/delete 'C:\Users\sande\OneDrive\Desktop\Product Tracker\pause.flag' to pause/resume
+2026-11-18 01:04:21,299 - INFO - ✅ Tracker initialized with 4 listings (Headless Background Mode)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #2 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #3 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #5 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #6 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #7 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #9 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Gurmeet (30% throttle: alert #10 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #2 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #3 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #5 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #6 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #7 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #9 skipped)
+2026-11-18 01:04:21,299 - INFO - ⏭️ Skipping Munil Giri (30% throttle: alert #10 skipped)

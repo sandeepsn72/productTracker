@@ -304,3 +304,5 @@
 2026-11-18 00:51:06,443 - INFO - ✅ WhatsApp sent to 918802219480
 2026-11-18 00:51:10,724 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/13658c8c1a74cb735b0419e4b6418245
 2026-11-18 00:51:16,849 - INFO - 🛑 Tracker stopped by user
+2026-11-18 00:56:19,558 - INFO - This info log should NOT appear on console
+2026-11-18 00:56:19,558 - WARNING - This warning log SHOULD appear on console

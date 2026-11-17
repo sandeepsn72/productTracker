@@ -84,8 +84,8 @@ WHATSAPP_CONTACTS = [
     {"name": "Munil Giri", "number": "918802219480", "send_alert": True},
 ]
 
-CHECK_INTERVAL = 60
-HEARTBEAT_INTERVAL = 3600
+CHECK_INTERVAL = 120
+HEARTBEAT_INTERVAL = 10800
 RETRY_INTERVAL = 1200
 PAGE_LOAD_WAIT = 5
 ENABLE_SOUND = True
@@ -137,15 +137,22 @@ HEARTBEAT_MESSAGE_TEMPLATE = """💓 HEARTBEAT — Tracker Alive
 # ==================== LOGGING ====================
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("tracker.log", encoding="utf-8"),
-        logging.StreamHandler(sys.stdout),
-    ],
-)
+
+file_handler = logging.FileHandler("tracker.log", encoding="utf-8")
+file_handler.setLevel(logging.INFO)
+file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(file_formatter)
+
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setLevel(logging.WARNING)  # Only show log on console if there is an issue (WARNING / ERROR)
+console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+console_handler.setFormatter(console_formatter)
+
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logger.handlers.clear()
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 # ==================== TEXT HELPERS ====================
 
@@ -777,24 +784,25 @@ class ProductTracker:
 
 if __name__ == "__main__":
     if not os.path.exists(BOT_CHROME_PROFILE_DIR):
-        print(f"⚠️  {BOT_CHROME_PROFILE_DIR} does not exist yet.")
-        print("    Run this once before starting the tracker:")
-        print(f'    chrome.exe --user-data-dir="{BOT_CHROME_PROFILE_DIR}"')
-        print("    Then log in to WhatsApp Web.")
+        # print(f"⚠️  {BOT_CHROME_PROFILE_DIR} does not exist yet.")
+        # print("    Run this once before starting the tracker:")
+        # print(f'    chrome.exe --user-data-dir="{BOT_CHROME_PROFILE_DIR}"')
+        # print("    Then log in to WhatsApp Web.")
+        logger.error(f"❌ {BOT_CHROME_PROFILE_DIR} does not exist yet. Please create it first.")
         sys.exit(1)
 
-    print("🚀 PRODUCT AVAILABILITY TRACKER (Headless Background Mode)")
-    print(f"📦 Tracking {len(PRODUCTS)} listings on Reliance Digital")
-    print("💻 Runs completely in the background: your mouse and keyboard will NOT be touched!")
-    print()
-    print("⏸️  PAUSE / RESUME:")
-    if HAS_KEYBOARD:
-        print("   • Press F9 to toggle pause/resume")
-    else:
-        print("   • Install 'keyboard' for F9 hotkey: pip install keyboard")
-    print(f"   • Or create '{PAUSE_FLAG_FILE}' to pause, delete it to resume")
-    print()
-    print("    Press Ctrl+C to stop.\n")
+    # print("🚀 PRODUCT AVAILABILITY TRACKER (Headless Background Mode)")
+    # print(f"📦 Tracking {len(PRODUCTS)} listings on Reliance Digital")
+    # print("💻 Runs completely in the background: your mouse and keyboard will NOT be touched!")
+    # print()
+    # print("⏸️  PAUSE / RESUME:")
+    # if HAS_KEYBOARD:
+    #     print("   • Press F9 to toggle pause/resume")
+    # else:
+    #     print("   • Install 'keyboard' for F9 hotkey: pip install keyboard")
+    # print(f"   • Or create '{PAUSE_FLAG_FILE}' to pause, delete it to resume")
+    # print()
+    # print("    Press Ctrl+C to stop.\n")
 
     tracker = ProductTracker()
     tracker.run()
